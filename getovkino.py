@@ -7,6 +7,7 @@ import re
 import time
 import datetime
 
+print("Start search....")
 
 #connect to DB
 db=sqlite3.connect('ovkino.db')
@@ -78,4 +79,4 @@ for link in movies:
     
     print ("\n\n")
         
-
+print("End search....")
