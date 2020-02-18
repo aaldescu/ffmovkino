@@ -2,12 +2,15 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('interval', minutes=3)
+@sched.scheduled_job('interval', minutes=5)
 def timed_job():
-    print('This job is run every three minutes.')
+    print('Starting Script')
+    exec(open("getovkino.py").read())
 
-@sched.scheduled_job('cron', day_of_week='mon-fri', hour=17)
-def scheduled_job():
-    print('This job is run every weekday at 5pm.')
 
+#@sched.scheduled_job('cron', day_of_week='mon-fri', hour=17)
+#def scheduled_job():
+#    print('This job is run every weekday at 5pm.')
+    
+    
 sched.start()
