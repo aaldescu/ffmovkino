@@ -25,7 +25,7 @@ def hello(environ, start_response):
 
 	events_string = json.dumps(events, indent = 4, sort_keys=True)
 
-	html_text = b"""
+	html_text = """
 	<html>
 
 	<head>
@@ -212,12 +212,13 @@ def hello(environ, start_response):
 
 	"""
 
-
+        #convert to byte
+	html_byte = b"".join(html_text)
 
 
 	
 	start_response("200 OK", [
 			("Content-Type", "text/html; charset=UTF-8"),
-			("Content-Length", str(len(html_text)))
+			("Content-Length", str(len(html_byte)))
 	])
-	return iter([html_text])
+	return iter([html_byte])
