@@ -209,11 +209,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </head>
 <body>
+<h1>Calendar with Frankfurt playtimes of moviews in Original Version </h1>
+
 <div id='calendar'></div>
 
 <center>
 <a href="https://www.buymeacoffee.com/ffmovkino" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a></center>
 </center>
+
+<br>
 
 </body>
 </html>
