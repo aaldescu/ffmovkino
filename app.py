@@ -213,7 +213,7 @@ def hello(environ, start_response):
 	"""
 
         #convert to byte
-	html_byte = b"".join(html_text)
+	html_byte = html_text.encode()
 
 
 	
