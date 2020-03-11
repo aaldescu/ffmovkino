@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </head>
 <body>
-<h1>Calendar with Frankfurt playtimes of moviews in Original Version </h1>
+<center><h1>Calendar with Frankfurt playtimes of moviews in Original Version </h1></center>
 
 <div id='calendar'></div>
 
