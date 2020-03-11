@@ -1,6 +1,7 @@
 import json
 import sqlite3
 from sqlite3 import Error
+from datetime import datetime
 
 def hello(environ, start_response):
 	
@@ -25,6 +26,9 @@ def hello(environ, start_response):
 
 	events_string = json.dumps(events, indent = 4, sort_keys=True)
 
+        now = datetime.now() # current date and time
+        today = now.strftime("%Y-%m-%d")
+        
 	html_text = """
 <html>
 
@@ -174,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var calendar = new FullCalendar.Calendar(calendarEl, {
 	plugins: [ 'dayGrid', 'list' ],
 	defaultView: 'listWeek',
-	defaultDate: '2020-02-13',
+	defaultDate: '"""+today+"""',
 	views: {
 		listDay: { buttonText: 'list day' },
 		listWeek: { buttonText: 'list week' },
