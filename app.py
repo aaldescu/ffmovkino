@@ -19,7 +19,7 @@ def hello(environ, start_response):
 	events = []
 	for row in rows:
 		event_dict = {}
-		event_dict = {'title' : row[1] ,'description' : 'Playing at ' + row[0] , 'start':row[2]+'T'+row[3] }
+		event_dict = {'title' : row[1] ,'description' : 'Playing at ' + row[0] , 'start':row[3]+'T'+row[2] }
 		events.append(event_dict)
 		
 
