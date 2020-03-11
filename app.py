@@ -26,8 +26,8 @@ def hello(environ, start_response):
 
 	events_string = json.dumps(events, indent = 4, sort_keys=True)
 
-        now = datetime.now() # current date and time
-        today = now.strftime("%Y-%m-%d")
+	now = datetime.now()
+	today = now.strftime("%Y-%m-%d")
         
 	html_text = """
 <html>
