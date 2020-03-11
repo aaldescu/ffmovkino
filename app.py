@@ -154,13 +154,14 @@ html, body {
 </style>
 
 
-<link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
-<link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
-<link href='fullcalendar/packages/list/main.css' rel='stylesheet' />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.css' rel='stylesheet' />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.css' rel='stylesheet' />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/list/main.min.css' rel='stylesheet' />
 
-<script src='fullcalendar/packages/core/main.js'></script>
-<script src='fullcalendar/packages/daygrid/main.js'></script>
-<script src='fullcalendar/packages/list/main.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/list/main.min.js'></script>
 
 <script src='https://unpkg.com/popper.js/dist/umd/popper.min.js'></script>
 <script src='https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js'></script>
