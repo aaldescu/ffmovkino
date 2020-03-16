@@ -2,7 +2,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('interval', minutes=55)
+@sched.scheduled_job('interval', minutes=5)
 def timed_job():
     print('Starting Clock Script')
     exec(open("getovkino.py").read())
