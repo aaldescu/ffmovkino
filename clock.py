@@ -1,16 +1,14 @@
+from datetime import datetime
 from apscheduler.schedulers.blocking import BlockingScheduler
+
+
+def job_function():
+    print('==============Starting Clock Script=================')
+    exec(open("getovkino.py").read())
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('interval', minutes=5)
-def timed_job():
-    print('Starting Clock Script')
-    exec(open("getovkino.py").read())
+# Schedule job_function to be called every two hours
+sched.add_job(job_function, 'interval', minutes=5)
 
-
-#@sched.scheduled_job('cron', day_of_week='mon-fri', hour=17)
-#def scheduled_job():
-#    print('This job is run every weekday at 5pm.')
-    
-    
 sched.start()
